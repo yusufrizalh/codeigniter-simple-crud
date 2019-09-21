@@ -7,6 +7,10 @@
     <title>Membuat CRUD dengan CodeIgniter</title>
 </head>
 <body>
+    <h1>Login Berhasil!</h1>
+    <h3>Hay, <?php echo $this->session->userdata("nama"); ?> - 
+    <a href="<?php echo base_url('index.php/login/logout'); ?>">Logout</a></h3>
+
     <h1>Membuat CRUD dengan CodeIgniter</h1>
     <?php echo anchor('crud/tambah', 'Tambah Data User'); ?>
 
